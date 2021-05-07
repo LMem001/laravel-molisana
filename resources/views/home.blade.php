@@ -8,7 +8,7 @@
                 <section class="lunghe">
                     <h2>Le lunghe</h2>
                     <div class="container__cards">
-                        <div class="card"></div>   
+                        {{dd($paste)}}
                     </div>
                 </section>
                 {{-- /sezione pasta lunga --}}
