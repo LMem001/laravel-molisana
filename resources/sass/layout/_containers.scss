@@ -1,0 +1,10 @@
+.container {
+    width: $container_width;
+    margin: auto;
+}
+
+.container__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}

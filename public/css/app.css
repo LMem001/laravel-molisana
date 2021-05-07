@@ -8,6 +8,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.container__cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 nav li {
   list-style: none;
 }
@@ -26,4 +37,20 @@ nav li {
   text-decoration: none;
   color: currentColor;
   padding: 10px;
+}
+
+.card {
+  width: calc(100% / 3 - 20px);
+  height: 300px;
+  margin: 10px;
+  background-color: red;
+}
+
+#home section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#home section h2 {
+  text-transform: uppercase;
 }
