@@ -5,9 +5,9 @@
         </div>
         <nav class="menu__nav">
             <ul>
-                <li>Link</li>
-                <li>Link</li>
-                <li>Link</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Prodotti</a></li>
+                <li><a href="#">News</a></li>
             </ul>
         </nav>
     </div>
