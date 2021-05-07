@@ -8,6 +8,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  color: #002d73;
+  font-weight: 400;
+}
+
 .container {
   width: 85%;
   margin: auto;
@@ -41,11 +46,17 @@ nav li {
 
 .card {
   width: calc(100% / 3 - 20px);
-  height: 300px;
   margin: 10px;
-  background-color: red;
+}
+.card img {
+  width: 100%;
+  display: block;
 }
 
+#home {
+  padding: 30px 0;
+  background-image: url(../images/fondo-pag-speciali.jpg);
+}
 #home section h2 {
   text-transform: uppercase;
 }

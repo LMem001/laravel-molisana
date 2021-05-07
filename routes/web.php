@@ -152,8 +152,8 @@ Route::get('/', function () {
     }
 
     return view('home', [
-        "lunghe" => $lunga;
-        "corte" => $corte;
-        "cortissime" => $cortissima;
+        "lunghe" => $lunga,
+        "corte" => $corta,
+        "cortissime" => $cortissima
     ]);
 });
