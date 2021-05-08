@@ -13,6 +13,16 @@ h2 {
   font-weight: 400;
 }
 
+h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
 .container {
   width: 85%;
   margin: auto;
@@ -22,10 +32,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
-
-nav li {
-  list-style: none;
 }
 
 .menu {
@@ -42,6 +48,23 @@ nav li {
   text-decoration: none;
   color: currentColor;
   padding: 10px;
+}
+
+footer li {
+  font-size: 14px;
+}
+footer .menu__footer {
+  padding-top: 30px;
+  color: #848d9b;
+  display: flex;
+}
+footer .menu__footer .copyright {
+  width: 25%;
+}
+footer .menu__footer .footer__navbars {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
 }
 
 .card {

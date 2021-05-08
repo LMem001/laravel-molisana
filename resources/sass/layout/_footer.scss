@@ -1,0 +1,18 @@
+footer {
+    li {
+        font-size: $font_small;
+    }
+    .menu__footer {
+        padding-top: $box_spacing;
+        color: $text_color;
+        display: flex;
+        .copyright {
+            width: 25%;
+        }
+        .footer__navbars {
+            display: flex;
+            justify-content: space-around;
+            width: 75%;
+        }
+    }
+}

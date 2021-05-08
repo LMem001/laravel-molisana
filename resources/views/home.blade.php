@@ -49,5 +49,6 @@
             </div>
         </div>
     </main>
+    @include('parts/footer')
 </body>
 </html>
