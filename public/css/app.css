@@ -17,10 +17,16 @@ h5 {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
+  padding: 15px 0;
 }
 
 li {
   list-style: none;
+}
+
+footer a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 .container {
@@ -61,15 +67,29 @@ footer .menu__footer {
 footer .menu__footer .copyright {
   width: 25%;
 }
+footer .menu__footer .copyright img {
+  padding: 15px 0;
+}
 footer .menu__footer .footer__navbars {
   display: flex;
   justify-content: space-around;
   width: 75%;
 }
+footer .menu__footer .footer__navbars li {
+  line-height: 25px;
+}
+footer::after {
+  content: "";
+  display: block;
+  height: 150px;
+  width: 100%;
+  background-image: url(../images/footer-montagne-bottom.jpg);
+}
 
 .card {
   width: calc(100% / 3 - 20px);
   margin: 10px;
+  cursor: pointer;
 }
 .card img {
   width: 100%;

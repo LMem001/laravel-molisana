@@ -8,11 +8,24 @@ footer {
         display: flex;
         .copyright {
             width: 25%;
+            img { 
+                padding: $box_spacing_small 0;
+            }
         }
         .footer__navbars {
             display: flex;
             justify-content: space-around;
             width: 75%;
+            li  {
+                line-height: 25px;
+            }
         }
+    }
+    &::after {
+        content: '';
+        display: block;
+        height: 150px;
+        width: 100%;
+        background-image: url(../images/footer-montagne-bottom.jpg);
     }
 }

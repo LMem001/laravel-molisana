@@ -11,8 +11,16 @@ h5 {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 20px;
+    padding: $box_spacing_small 0;
 }
 
 li {
     list-style: none;
+}
+
+footer {
+    a {
+        color: currentColor;
+        text-decoration: none;
+    }
 }
