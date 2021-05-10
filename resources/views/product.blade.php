@@ -18,13 +18,13 @@
 @section('background')home__background--col @endsection
 
 @section('content')
-<a class="btn__change previous_product"><i class="fas fa-chevron-left"></i></a>
+<a href="{{route('product', ['id' => $pasta['previous']])}}" class="btn__change previous_product"><i class="fas fa-chevron-left"></i></a>
 <div class="product">
     <h1>{{ $pasta['titolo'] }}</h1>
     <img src="{{$pasta['src-h']}}">
     <img src="{{$pasta['src-p']}}" alt="$pasta['titolo']">
     <p>{!!$pasta["descrizione"]!!}</p>
 </div>
-<a class="btn__change next_product"><i class="fas fa-chevron-right"></i></a>
+<a href="{{route('product', ['id' => $pasta['next']])}}" class="btn__change next_product"><i class="fas fa-chevron-right"></i></a>
 @endsection
 {{-- body --}}

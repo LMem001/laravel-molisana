@@ -21,8 +21,10 @@ Route::get('/', function () {
     $cortissima = [];
 
     foreach ($data as $key => $pasta) {
+        // save the id of the original pasta spot in $data 
         $pasta['id'] = $key;
 
+        // divide the different type of elements in different arrays
         if($pasta['tipo'] == "lunga") {
             $lunga[] = $pasta;  
         } elseif($pasta['tipo'] == "corta") {
@@ -42,6 +44,20 @@ Route::get('/', function () {
 Route::get('/product/{id}', function($id) {
     $data = config('paste');
     $pasta = $data[$id];
+
+    // store id of next element
+    if($id < count($data) - 1) {
+        $pasta['next'] = $id + 1;
+    } else {
+        $pasta['next'] = 0;
+    }
+
+    // store id of previous element
+    if($id > 0) {
+        $pasta['previous'] = $id - 1;
+    } else {
+        $pasta['previous'] = count($data) - 1;
+    }
     
     return view('product', [
         'pasta' => $pasta
