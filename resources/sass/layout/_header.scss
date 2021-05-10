@@ -8,7 +8,7 @@
         margin-top: $box_spacing;
         a {
             text-decoration: none;
-            color: $main_color;
+            color: currentColor;
             padding: 10px;
             font-weight: 500;
             &.active {

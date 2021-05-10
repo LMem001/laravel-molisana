@@ -6,4 +6,7 @@
         width: 100%;
         display: block;
     }
+    @media screen and (max-width: $tablet) {
+        width: calc(100% / 2 - 20px);
+    }
 }

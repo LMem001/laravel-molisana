@@ -5,8 +5,8 @@
         </div>
         <nav class="menu__nav">
             <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Prodotti</a></li>
+                <li><a href="{{route('homepage')}}" class="{{Route :: getCurrentRoute()->getName() == 'homepage' ? 'active' : ''}}">Home</a></li>
+                <li><a href="{{route('product', '0')}}" class="{{Route :: getCurrentRoute()->getName() == 'product' ? 'active' : ''}}">Prodotti</a></li>
                 <li><a href="#">News</a></li>
             </ul>
         </nav>
