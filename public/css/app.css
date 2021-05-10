@@ -89,6 +89,7 @@ footer .menu__footer .copyright {
   width: 25%;
 }
 footer .menu__footer .copyright img {
+  width: 100%;
   padding: 15px 0;
 }
 footer .menu__footer .footer__navbars {
@@ -99,12 +100,34 @@ footer .menu__footer .footer__navbars {
 footer .menu__footer .footer__navbars li {
   line-height: 25px;
 }
+@media screen and (max-width: 1000px) {
+  footer .menu__footer .footer__navbars {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .menu__footer {
+    flex-direction: column;
+  }
+  footer .menu__footer .copyright {
+    width: 100%;
+  }
+  footer .menu__footer .footer__navbars {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 footer::after {
   content: "";
   display: block;
   height: 150px;
   width: 100%;
   background-image: url(../images/footer-montagne-bottom.jpg);
+}
+@media screen and (max-width: 768px) {
+  footer::after {
+    background-position-x: 20%;
+  }
 }
 
 .card {
@@ -119,6 +142,11 @@ footer::after {
 @media screen and (max-width: 768px) {
   .card {
     width: calc(100% / 2 - 20px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }
 

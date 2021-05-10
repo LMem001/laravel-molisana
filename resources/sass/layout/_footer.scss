@@ -9,6 +9,7 @@ footer {
         .copyright {
             width: 25%;
             img { 
+                width: 100%;
                 padding: $box_spacing_small 0;
             }
         }
@@ -20,6 +21,21 @@ footer {
                 line-height: 25px;
             }
         }
+        @media screen and (max-width: 1000px) {
+            .footer__navbars {
+                width: 85%;
+            }
+        }
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
+            .copyright {
+                width: 100%;
+            }
+            .footer__navbars {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
     }
     &::after {
         content: '';
@@ -27,5 +43,8 @@ footer {
         height: 150px;
         width: 100%;
         background-image: url(../images/footer-montagne-bottom.jpg);
+        @media screen and (max-width: $tablet) {
+            background-position-x: 20%;
+        }
     }
 }

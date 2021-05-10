@@ -9,4 +9,7 @@
     @media screen and (max-width: $tablet) {
         width: calc(100% / 2 - 20px);
     }
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
 }
