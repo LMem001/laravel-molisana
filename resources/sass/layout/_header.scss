@@ -8,8 +8,12 @@
         margin-top: $box_spacing;
         a {
             text-decoration: none;
-            color: currentColor;
+            color: $main_color;
             padding: 10px;
+            font-weight: 500;
+            &.active {
+                background-color: $secondary_color;
+            }
         }
     }
 }

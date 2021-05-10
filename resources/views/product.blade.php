@@ -4,7 +4,7 @@
     Product
 @endsection
 
-@section('background')background--col @endsection
+@section('background')home__background--col @endsection
 
 @section('content')
 <div class="product">

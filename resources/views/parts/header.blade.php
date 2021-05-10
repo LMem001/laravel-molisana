@@ -5,7 +5,7 @@
         </div>
         <nav class="menu__nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Prodotti</a></li>
                 <li><a href="#">News</a></li>
             </ul>

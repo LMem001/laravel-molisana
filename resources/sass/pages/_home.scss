@@ -1,5 +1,11 @@
 #home {
     padding: $box_spacing 0;
+    &.home__background--img {
+        background-image: url(../images/fondo-pag-speciali.jpg);
+    }
+    &.home__background--col {
+        background-color: $background_color;
+    }
     section {
         h2 {
             text-transform: uppercase;

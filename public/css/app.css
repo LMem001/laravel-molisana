@@ -45,14 +45,6 @@ footer a {
   width: 100%;
 }
 
-.background--img {
-  background-image: url(../images/fondo-pag-speciali.jpg);
-}
-
-.background--col {
-  background-color: #b7dae5;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -65,8 +57,12 @@ footer a {
 }
 .menu .menu__nav ul a {
   text-decoration: none;
-  color: currentColor;
+  color: #002d73;
   padding: 10px;
+  font-weight: 500;
+}
+.menu .menu__nav ul a.active {
+  background-color: #b2e5fc;
 }
 
 .product {
@@ -123,6 +119,12 @@ footer::after {
 
 #home {
   padding: 30px 0;
+}
+#home.home__background--img {
+  background-image: url(../images/fondo-pag-speciali.jpg);
+}
+#home.home__background--col {
+  background-color: #b7dae5;
 }
 #home section h2 {
   text-transform: uppercase;

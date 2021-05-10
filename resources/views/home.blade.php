@@ -4,7 +4,7 @@
     Home-Page || La Molisana
 @endsection
 
-@section('background')background--img @endsection
+@section('background')home__background--img @endsection
 
 @section('content')
 {{-- sezione pasta lunga --}}
@@ -14,7 +14,7 @@
         {{-- cards --}}
         @foreach ($lunghe as $pasta)
         <div class="card">
-            <img src="{{ $pasta['src'] }}" alt="$pasta['titolo']">
+            <a href="{{route('product', ['id' => $pasta['id']])}}"><img src="{{ $pasta['src'] }}" alt="$pasta['titolo']"></a>
         </div>
         @endforeach
         {{-- /cards --}}
@@ -28,7 +28,7 @@
         {{-- cards --}}
         @foreach ($corte as $pasta)
         <div class="card">
-            <img src="{{ $pasta['src'] }}" alt="$pasta['titolo']">
+            <a href="{{route('product', ['id' => $pasta['id']])}}"><img src="{{ $pasta['src'] }}" alt="$pasta['titolo']"></a>
         </div>
         @endforeach
         {{-- /cards --}}
@@ -42,7 +42,7 @@
         {{-- cards --}}
         @foreach ($cortissime as $pasta)
         <div class="card">
-            <img src="{{ $pasta['src'] }}" alt="$pasta['titolo']">
+            <a href="{{route('product', ['id' => $pasta['id']])}}"><img src="{{ $pasta['src'] }}" alt="$pasta['titolo']"></a>
         </div>
         @endforeach
         {{-- /cards --}}
