@@ -1,5 +1,12 @@
 @extends('layouts.main')
-@section('homeContent')
+
+@section('pageTitle')
+    Home-Page || La Molisana
+@endsection
+
+@section('background')background--img @endsection
+
+@section('content')
 {{-- sezione pasta lunga --}}
 <section class="lunghe">
     <h2>Le lunghe</h2>

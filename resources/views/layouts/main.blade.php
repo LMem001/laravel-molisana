@@ -2,9 +2,9 @@
 <body>
     @include('parts.header')
     <main>
-        <div id="home">
+        <div id="home" class="@yield('background')">
             <div class="container">
-                @yield('homeContent')
+                @yield('content')
             </div>
         </div>
     </main>

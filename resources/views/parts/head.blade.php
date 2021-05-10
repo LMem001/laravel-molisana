@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     {{-- /Google Fonts --}}
     {{-- css --}}
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     {{-- /css --}}
-    <title>Laravel Molisana</title>
+    <title>@yield('pageTitle')</title>
 </head>

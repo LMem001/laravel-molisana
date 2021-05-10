@@ -40,6 +40,10 @@ footer a {
   width: 100%;
 }
 
+.background--img {
+  background-image: url(../images/fondo-pag-speciali.jpg);
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -98,7 +102,6 @@ footer::after {
 
 #home {
   padding: 30px 0;
-  background-image: url(../images/fondo-pag-speciali.jpg);
 }
 #home section h2 {
   text-transform: uppercase;

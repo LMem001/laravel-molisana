@@ -1,7 +1,7 @@
 <header>
     <div class="menu">
         <div class="menu__logo">
-            <img src="images/marchio-sito-test.png" alt="logo molisana">
+            <img src="{{ asset('images/marchio-sito-test.png') }}" alt="logo molisana">
         </div>
         <nav class="menu__nav">
             <ul>
