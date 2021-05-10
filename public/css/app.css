@@ -8,6 +8,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-weight: 500;
+  padding: 30px;
+}
+
 h2 {
   color: #002d73;
   font-weight: 400;
@@ -44,6 +49,10 @@ footer a {
   background-image: url(../images/fondo-pag-speciali.jpg);
 }
 
+.background--col {
+  background-color: #b7dae5;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -63,6 +72,7 @@ footer a {
 .product {
   width: 100%;
   text-align: center;
+  color: #002d73;
 }
 .product img {
   width: 80%;

@@ -2,6 +2,11 @@ body {
     font-family: $main_f-family;
 }
 
+h1 {
+    font-weight: 500;
+    padding: $box_spacing;
+}
+
 h2 {
     color: $main_color;
     font-weight: 400;

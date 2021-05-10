@@ -1,4 +1,11 @@
 @extends('layouts.main')
+
+@section('pageTitle')
+    Product
+@endsection
+
+@section('background')background--col @endsection
+
 @section('content')
 <div class="product">
     <h1>{{ $pasta['titolo'] }}</h1>
