@@ -1,9 +1,12 @@
 @extends('layouts.main')
 
+{{-- head --}}
 @section('pageTitle')
     Home-Page || La Molisana
 @endsection
+{{-- /head --}}
 
+{{-- body --}}
 @section('background')home__background--img @endsection
 
 @section('content')
@@ -50,3 +53,4 @@
 </section>
 {{-- /sezione pasta cortissima --}}
 @endsection
+{{-- /body --}}
