@@ -60,6 +60,17 @@ footer a {
   padding: 10px;
 }
 
+.product {
+  width: 100%;
+  text-align: center;
+}
+.product img {
+  width: 80%;
+}
+.product p {
+  text-align: left;
+}
+
 footer li {
   font-size: 14px;
 }
