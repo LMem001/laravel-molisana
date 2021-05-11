@@ -43,6 +43,11 @@ Route::get('/', function () {
 
 Route::get('/product/{id}', function($id) {
     $data = config('paste');
+    // check if id is in range
+    if ($id >= count($data)) {
+        abort(404);
+    }
+
     $pasta = $data[$id];
 
     // store id of next element
